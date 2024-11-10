@@ -1,0 +1,181 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1,
+h3,
+h4,
+h2 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+h4{
+font-weight: lighter;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: dodgerblue;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+#logo h2 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links li a {
+    color: #fff;
+    padding: 8px 15px;
+}
+
+
+.welcome h3,
+h4 {
+    margin-left: 2em;
+    padding: 1em;
+}
+
+.appointment-form {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.container {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+.our-services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: dodgerblue;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 95%;
+    height: 50%;
+    object-fit: cover;
+    margin-top: 0.5em;
+}
+
+.card-content {
+    padding: 15px;
+    color: #fff;
+}
+
+.sdb {
+    text-align: center;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+
+footer {
+    background-color: #1b1c30;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+@media (max-width: 575px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #logo h2 {
+        margin: 0.6em;
+    }
+
+    .nav-links li {
+        margin-left: 10px;
+    }
+    
+    .nav-links li a {
+        padding:5px;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 990px) {
+
+
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    #logo h2 {
+        margin: 0.6em;
+    }
+
+    .nav-links li {
+        margin-left: 10px;
+    }
+    
+    .nav-links li a {
+        padding:5px;
+    }
+
+    .cards-container {
+        margin: 10px;
+        flex-direction: row;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
